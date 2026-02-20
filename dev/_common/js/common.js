@@ -9,18 +9,18 @@ gsap.defaults({
 const { w, h } = size;
 
 const READ_PRE = {
-  t1: 1.5,
+  t1: 1.4,
   t2: 1.9,
   t3: 2.1,
 };
 
-const READ_POST = {
-  t1: 1.5,
+const READ_MID = {
+  t1: 1.3,
   t2: 1.5,
   t3: 2.1,
 };
 
-const READ = universalBanner.name === "mid" ? READ_POST : READ_PRE;
+const READ = universalBanner.name === "mid" ? READ_MID : READ_PRE;
 
 function init() {
   const tl = new TimelineMax({

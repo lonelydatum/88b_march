@@ -20,18 +20,18 @@ var w = size.w;
 var h = size.h;
 
 var READ_PRE = {
-  t1: 1.5,
+  t1: 1.4,
   t2: 1.9,
   t3: 2.1
 };
 
-var READ_POST = {
-  t1: 1.5,
+var READ_MID = {
+  t1: 1.3,
   t2: 1.5,
   t3: 2.1
 };
 
-var READ = universalBanner.name === "mid" ? READ_POST : READ_PRE;
+var READ = universalBanner.name === "mid" ? READ_MID : READ_PRE;
 
 function init() {
   var tl = new TimelineMax({
